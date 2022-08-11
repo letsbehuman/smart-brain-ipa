@@ -13,7 +13,7 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    host: '127.0.0.1',
+    host: 'postgresql-objective-32104',
     // port: 3306,
     user: 'postgres',
     password: 'test',
@@ -53,8 +53,8 @@ app.post('/imageurl', (req, res) => {
 });
 
 //*
-const PORT = process.env.PORT;
-app.listen(PORT, () => {
+const PORT = process.env.PORT; //PORT is defined in the terminal as "PORT=3000 node server.js"
+app.listen(PORT || 3000, () => {
   console.log(`service is listening on port ${PORT}`);
 });
 
