@@ -20,3 +20,7 @@
     "pg": "^8.7.3"
   }
 }
+
+/* 
+psql --host=ec2-44-209-186-51.compute-1.amazonaws.com --port=5432 --username=qhbbmmdogabaij --password --dbname=d6j3meum7tn3c9 
+*/
